@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+  </head>
+  <body>
+    <div id="p-wrap">
+      <div id='p-loader'></div>
+      <div id='p-content'>
+        <b>title</b>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+      </div>
+    </div>
+    <script src="pull-to-refresh.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      const p = new PullToRefresh({
+        wrapEl: '#p-wrap',
+        contentEl: '#p-content',
+        loaderEl: '#p-loader',
+        pullDownText: '下拉刷新',
+        loadingText: '正在加载...',
+        releaseText: '释放立即刷新',
+      })
+      p.onPull((done) => setTimeout(() => done(), 1000))
+    </script>
+  </body>
+</html>
