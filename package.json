@@ -1,6 +1,6 @@
 {
   "name": "m-pull-to-refresh",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "lightweight pull to refresh for js",
   "main": "./dist/pull-to-refresh.js",
   "scripts": {
