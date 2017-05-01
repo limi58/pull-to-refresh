@@ -10,6 +10,14 @@
   },
   "author": "limi58",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limi58/m-pull-to-refresh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/limi58/m-pull-to-refresh/issues"
+  },
+  "homepage": "https://github.com/limi58/m-pull-to-refresh#readme",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-plugin-external-helpers": "^6.22.0",
