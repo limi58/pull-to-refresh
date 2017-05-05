@@ -108,4 +108,4 @@ function $(seletor) {
   return document.querySelector(seletor)
 }
 
-module.exports = PullToRefresh
+export default PullToRefresh

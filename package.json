@@ -2,7 +2,7 @@
   "name": "m-pull-to-refresh",
   "version": "1.0.3",
   "description": "lightweight pull to refresh for js",
-  "main": "./src/index.js",
+  "main": "./index.js",
   "scripts": {
     "dev": "set NODE_ENV=dev&&rollup -c -w",
     "build": "set NODE_ENV=production&&rollup -c",
