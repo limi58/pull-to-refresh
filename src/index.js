@@ -11,8 +11,8 @@ function PullToRefresh(opts) {
   this.touchArea = opts.touchArea || this.contentEl
   this.releaseStayDistance = opts.releaseStayDistance || 40
   this.loaderHeight = opts.loaderHeight || 40
-  this.loaderBg = opts.loaderBg || '#eee'
-  this.loaderColor = opts.loaderColor || '#333'
+  this.loaderBg = opts.loaderBg || '#f5f5f5'
+  this.loaderColor = opts.loaderColor || '#999'
 
   this.isOverRelease = false
   this.startY = 0
@@ -24,10 +24,10 @@ function PullToRefresh(opts) {
 PullToRefresh.prototype = {
   onPull(cb) {
     const loaderHeight = this.loaderHeight
-    this.loaderEl.style = `
+    this.loaderEl.setAttribute('style', `
       margin-top: -${loaderHeight}px;height: ${loaderHeight}px;color: ${this.loaderColor};
       line-height: ${loaderHeight}px;text-align: center;background: ${this.loaderBg};
-    `
+    `)
     this.touchArea.addEventListener('touchstart', this._handleContentTouchstart.bind(this))
     this.touchArea.addEventListener('touchmove', this._handleContentTouchmove.bind(this))
     this.touchArea.addEventListener('touchend', this._handleContentTouchend.bind(this))

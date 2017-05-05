@@ -2,7 +2,7 @@
   "name": "m-pull-to-refresh",
   "version": "1.0.1",
   "description": "lightweight pull to refresh for js",
-  "main": "./dist/pull-to-refresh.js",
+  "main": "./src/index.js",
   "scripts": {
     "dev": "set NODE_ENV=dev&&rollup -c -w",
     "build": "set NODE_ENV=production&&rollup -c",
@@ -33,6 +33,7 @@
     "rollup-plugin-replace": "^1.1.1",
     "rollup-plugin-serve": "^0.3.0",
     "rollup-plugin-uglify": "^1.0.2",
-    "rollup-watch": "^3.2.2"
+    "rollup-watch": "^3.2.2",
+    "rollup-plugin-node-resolve": "^3.0.0"
   }
 }

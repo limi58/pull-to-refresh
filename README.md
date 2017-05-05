@@ -42,27 +42,40 @@ new PullToRefresh(opts)
 opts:
 
 **contentEl**  
+
 **loaderEl**  
+
 **wrapEl**  
+
 **[distanceLimit]**  
 max pull distance, default 500  
+
 **[distanceLoad]**  
 distance to load, default 60  
+
 **[pullDownText]**  
 default 'pull down'  
+
 **[releaseText]**  
 default 'release'  
+
 **[loadingText]**  
 default 'loading'  
+
 **[pullSpeed]**  
 touchmove speed, default 0.6  
+
 **[touchArea]**  
 default contentEl  
+
 **[releaseStayDistance]**  
 margin top when release, default 40  
+
 **[loaderHeight]**  
 default 40  
+
 **[loaderBg]**  
-default '#eee'  
+default '#f5f5f5'  
+
 **[loaderColor]**  
-default '#333'  
+default '#999'  
